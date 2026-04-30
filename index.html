@@ -7,14 +7,48 @@
 <meta name="description" content="Sutro Tech — WiFi · HiFi · Ai for home and business. David Hart, concierge technologist. San Francisco.">
 <meta name="theme-color" content="#0a0a0a">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23ffffff'><rect x='9' y='3' width='1' height='9'/><rect x='15.5' y='1' width='1' height='11'/><rect x='22' y='3' width='1' height='9'/><rect x='7' y='11.5' width='18' height='1.2'/><polygon points='11,12.7 21,12.7 27,30 5,30'/></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Bellota:ital,wght@0,400;1,400&family=Jura:wght@400;500&display=swap" rel="stylesheet">
 <style>
+  /* ---- SELF-HOSTED FONTS (subset to glyphs used) ---------------------- */
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    src: url('fonts/montserrat-black.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url('fonts/montserrat-light.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'eurofurence';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url('fonts/eurofurence.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Bellota';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('fonts/bellota-regular.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Bellota';
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: url('fonts/bellota-italic.woff2') format('woff2');
+  }
+
   :root {
     --bg: #0a0a0a;
     --fg: #ffffff;
-    --grid: rgba(255,255,255,0.022);   /* subtle grid line color */
+    --grid: rgba(255,255,255,0.06);    /* grid line color */
     --grid-size: 56px;
   }
 
@@ -54,24 +88,15 @@
   }
 
   .title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', system-ui, sans-serif;
     font-weight: 900;
     font-size: clamp(2.6rem, 8vw, 4.5rem);
     letter-spacing: -0.005em;
     line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.4em;
-  }
-  .title .wave {
-    font-weight: 400;
-    font-size: 0.7em;
-    opacity: 0.95;
   }
 
   .domain {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', system-ui, sans-serif;
     font-weight: 300;
     font-size: clamp(1.15rem, 2.6vw, 1.5rem);
     margin-top: 1.4rem;
@@ -79,8 +104,7 @@
   }
 
   .services {
-    /* Eurofurence is not on Google Fonts; Jura is the fallback. */
-    font-family: 'eurofurence', 'Jura', 'Montserrat', sans-serif;
+    font-family: 'eurofurence', 'Montserrat', system-ui, sans-serif;
     font-weight: 500;
     font-size: clamp(1.25rem, 2.9vw, 1.65rem);
     letter-spacing: 0.04em;
@@ -111,7 +135,7 @@
     align-items: baseline;
     gap: 1.5rem;
     flex-wrap: wrap;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', system-ui, sans-serif;
     font-weight: 900;
     font-size: clamp(1.4rem, 4.2vw, 2.1rem);
     letter-spacing: -0.005em;
@@ -141,9 +165,7 @@
 <body class="grid">
   <main>
     <article class="card">
-      <h1 class="title">
-        <span class="wave" aria-hidden="true">〰</span>Sutro Tech<span class="wave" aria-hidden="true">〰</span>
-      </h1>
+      <h1 class="title">〰 Sutro Tech 〰</h1>
       <p class="domain">sutro.tech</p>
       <p class="services">WiFi · HiFi · Ai</p>
       <p class="tagline">home and business</p>

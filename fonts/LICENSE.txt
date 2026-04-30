@@ -1,0 +1,21 @@
+Fonts on this page are subset to the exact glyphs used.
+
+  montserrat-black.woff2   — Montserrat, weight 900 (instanced from variable)
+  montserrat-light.woff2   — Montserrat, weight 300 (instanced from variable)
+  bellota-regular.woff2    — Bellota Regular
+  bellota-italic.woff2     — Bellota Italic
+  eurofurence.woff2        — Eurofurence (eurof55, medium)
+
+Montserrat © The Montserrat Project Authors.
+  https://github.com/JulietaUla/Montserrat
+  Licensed under the SIL Open Font License, Version 1.1.
+  https://openfontlicense.org/
+
+Bellota © The Bellota Project Authors.
+  https://github.com/kemie/Bellota-Font
+  Licensed under the SIL Open Font License, Version 1.1.
+  https://openfontlicense.org/
+
+Eurofurence © Tobias Benjamin Köhler.
+  Released as freeware (personal and commercial use permitted).
+  Originally created in 2000 for the EuroFurence convention.
