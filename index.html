@@ -78,7 +78,7 @@
     min-height: 100%;
     display: grid;
     place-items: center;
-    padding: 3rem 1.5rem;
+    padding: 3rem clamp(1rem, 4vw, 1.5rem);
   }
 
   .card {
@@ -87,10 +87,13 @@
     text-align: center;
   }
 
+  /* Every line on the card is meant to stay on a single line. */
+  .card > * { white-space: nowrap; }
+
   .title {
     font-family: 'Montserrat', system-ui, sans-serif;
     font-weight: 900;
-    font-size: clamp(2.6rem, 8vw, 4.5rem);
+    font-size: clamp(1.7rem, 8.5vw, 4.5rem);
     letter-spacing: -0.005em;
     line-height: 1;
   }
@@ -98,7 +101,7 @@
   .domain {
     font-family: 'Montserrat', system-ui, sans-serif;
     font-weight: 300;
-    font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+    font-size: clamp(1rem, 2.7vw, 1.5rem);
     margin-top: 1.4rem;
     letter-spacing: 0.01em;
   }
@@ -106,7 +109,7 @@
   .services {
     font-family: 'eurofurence', 'Montserrat', system-ui, sans-serif;
     font-weight: 500;
-    font-size: clamp(1.25rem, 2.9vw, 1.65rem);
+    font-size: clamp(1.05rem, 3vw, 1.65rem);
     letter-spacing: 0.04em;
     margin-top: 1.1rem;
   }
@@ -115,7 +118,7 @@
   .role {
     font-family: 'Bellota', cursive;
     font-weight: 400;
-    font-size: clamp(1.15rem, 2.6vw, 1.45rem);
+    font-size: clamp(1rem, 2.7vw, 1.45rem);
   }
   .tagline { font-style: italic; margin-top: 1.1rem; }
   .role    { margin-top: 1.1rem; }
@@ -133,11 +136,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    gap: 0.6em;
     font-family: 'Montserrat', system-ui, sans-serif;
     font-weight: 900;
-    font-size: clamp(1.4rem, 4.2vw, 2.1rem);
+    font-size: clamp(1rem, 4.8vw, 2.1rem);
     letter-spacing: -0.005em;
   }
   .footer a {
@@ -148,10 +150,6 @@
   }
   .footer a:hover,
   .footer a:focus-visible { border-bottom-color: rgba(255,255,255,0.55); }
-
-  @media (max-width: 480px) {
-    .footer { justify-content: center; flex-direction: column; gap: 0.6rem; }
-  }
 
   @media (prefers-reduced-motion: no-preference) {
     .card { animation: rise .6s ease-out both; }
